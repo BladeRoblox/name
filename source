@@ -1,0 +1,342 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Music = Instance.new("TextButton")
+local Skybox = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local MESSAGE = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local UNANCHOR = Instance.new("TextButton")
+local message = Instance.new("TextBox")
+local ImageLabel = Instance.new("ImageLabel")
+local DAMESSAGE = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+Frame.BorderColor3 = Color3.fromRGB(255, 85, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.338602334, 0, 0.193452388, 0)
+Frame.Size = UDim2.new(0, 300, 0, 439)
+
+UICorner.Parent = Frame
+
+Music.Name = "Music"
+Music.Parent = Frame
+Music.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Music.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Music.BorderSizePixel = 0
+Music.Position = UDim2.new(0.608715892, 0, 0.160013199, 0)
+Music.Size = UDim2.new(0, 83, 0, 71)
+Music.Font = Enum.Font.SourceSans
+Music.Text = "MUSIC"
+Music.TextColor3 = Color3.fromRGB(255, 85, 0)
+Music.TextScaled = true
+Music.TextSize = 14.000
+Music.TextWrapped = true
+
+Skybox.Name = "Skybox"
+Skybox.Parent = Frame
+Skybox.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Skybox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Skybox.BorderSizePixel = 0
+Skybox.Position = UDim2.new(0.128044799, 0, 0.160013199, 0)
+Skybox.Size = UDim2.new(0, 83, 0, 71)
+Skybox.Font = Enum.Font.SourceSans
+Skybox.Text = "SKYBOX"
+Skybox.TextColor3 = Color3.fromRGB(255, 85, 0)
+Skybox.TextScaled = true
+Skybox.TextSize = 14.000
+Skybox.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.128044799, 0, 0.355817974, 0)
+TextButton.Size = UDim2.new(0, 83, 0, 71)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "JUMPSCARE"
+TextButton.TextColor3 = Color3.fromRGB(255, 85, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.165452197, 0, 0.0187242031, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "TEAM HARU GUI"
+TextLabel.TextColor3 = Color3.fromRGB(255, 85, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner_2.Parent = TextLabel
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.608715892, 0, 0.781977892, 0)
+TextButton_2.Size = UDim2.new(0, 83, 0, 71)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "SKYBOX"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 85, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.128044799, 0, 0.781977892, 0)
+TextButton_3.Size = UDim2.new(0, 83, 0, 71)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "SKYBOX"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 85, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+MESSAGE.Name = "MESSAGE"
+MESSAGE.Parent = Frame
+MESSAGE.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+MESSAGE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MESSAGE.BorderSizePixel = 0
+MESSAGE.Position = UDim2.new(0.128044844, 0, 0.562149763, 0)
+MESSAGE.Size = UDim2.new(0, 42, 0, 71)
+MESSAGE.Font = Enum.Font.SourceSans
+MESSAGE.Text = "MESSAGE"
+MESSAGE.TextColor3 = Color3.fromRGB(255, 85, 0)
+MESSAGE.TextScaled = true
+MESSAGE.TextSize = 14.000
+MESSAGE.TextWrapped = true
+
+TextButton_4.Parent = Frame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.608715892, 0, 0.561167181, 0)
+TextButton_4.Size = UDim2.new(0, 83, 0, 71)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "SKYBOX"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 85, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
+UNANCHOR.Name = "UNANCHOR"
+UNANCHOR.Parent = Frame
+UNANCHOR.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+UNANCHOR.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UNANCHOR.BorderSizePixel = 0
+UNANCHOR.Position = UDim2.new(0.608715832, 0, 0.355817944, 0)
+UNANCHOR.Size = UDim2.new(0, 83, 0, 71)
+UNANCHOR.Font = Enum.Font.SourceSans
+UNANCHOR.Text = "UNANCHOR"
+UNANCHOR.TextColor3 = Color3.fromRGB(255, 85, 0)
+UNANCHOR.TextScaled = true
+UNANCHOR.TextSize = 14.000
+UNANCHOR.TextWrapped = true
+
+message.Name = "message"
+message.Parent = Frame
+message.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+message.BorderColor3 = Color3.fromRGB(0, 0, 0)
+message.BorderSizePixel = 0
+message.Position = UDim2.new(0.266666681, 0, 0.562149763, 0)
+message.Size = UDim2.new(0, 41, 0, 71)
+message.Font = Enum.Font.SourceSans
+message.Text = "ENTER MESSAGE"
+message.TextColor3 = Color3.fromRGB(0, 0, 0)
+message.TextScaled = true
+message.TextSize = 14.000
+message.TextWrapped = true
+
+ImageLabel.Parent = ScreenGui
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+ImageLabel.BackgroundTransparency = 0.400
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(-0.135353535, 0, 0, 0)
+ImageLabel.Size = UDim2.new(0, 1917, 0, 947)
+ImageLabel.Visible = false
+ImageLabel.Image = "rbxassetid://14108955034"
+
+DAMESSAGE.Name = "DAMESSAGE"
+DAMESSAGE.Parent = ScreenGui
+DAMESSAGE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DAMESSAGE.BackgroundTransparency = 1.000
+DAMESSAGE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DAMESSAGE.BorderSizePixel = 0
+DAMESSAGE.Position = UDim2.new(0.132319376, 0, 0.0252631456, 0)
+DAMESSAGE.Size = UDim2.new(0, 1410, 0, 203)
+DAMESSAGE.Visible = false
+DAMESSAGE.Font = Enum.Font.SourceSans
+DAMESSAGE.Text = ""
+DAMESSAGE.TextColor3 = Color3.fromRGB(255, 170, 0)
+DAMESSAGE.TextScaled = true
+DAMESSAGE.TextSize = 14.000
+DAMESSAGE.TextWrapped = true
+
+-- Scripts:
+
+local function QJXG_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(QJXG_fake_script)()
+local function AIZGFG_fake_script() -- Music.Script 
+	local script = Instance.new('Script', Music)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.carti.Parent = game.Workspace
+		wait(2)
+		game.Workspace.carti:Play()
+	end)
+end
+coroutine.wrap(AIZGFG_fake_script)()
+local function DNNZKA_fake_script() -- Skybox.Script 
+	local script = Instance.new('Script', Skybox)
+
+	local lightning = game.Lighting:GetChildren()
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.Parent.Parent.Sky.Parent = game.Lighting
+	end)
+end
+coroutine.wrap(DNNZKA_fake_script)()
+local function AQUKK_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.ImageLabel.Visible = true
+		wait(0.1)
+		script.Parent.Parent.Parent.ImageLabel.Visible = false
+		wait(0.1)
+		script.Parent.Parent.Parent.ImageLabel.Visible = true
+		wait(0.1)
+		script.Parent.Parent.Parent.ImageLabel.Visible = false
+		wait(0.1)
+		script.Parent.Parent.Parent.ImageLabel.Visible = true
+		wait(0.1)
+		script.Parent.Parent.Parent.ImageLabel.Visible = false
+		wait(0.1)
+		script.Parent.Parent.Parent.ImageLabel.Visible = true
+		wait(0.1)
+		script.Parent.Parent.Parent.ImageLabel.Visible = false
+		wait(0.1)
+		script.Parent.Parent.Parent.ImageLabel.Visible = true
+		wait(0.1)
+		script.Parent.Parent.Parent.ImageLabel.Visible = false
+		wait(0.1)
+		script.Parent.Parent.Parent.ImageLabel.Visible = true
+		wait(0.1)
+		script.Parent.Parent.Parent.ImageLabel.Visible = false
+		wait(0.1)
+	
+		
+	end)
+end
+coroutine.wrap(AQUKK_fake_script)()
+local function PUUZ_fake_script() -- MESSAGE.LocalScript 
+	local script = Instance.new('LocalScript', MESSAGE)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local text = script.Parent.Parent.message.Text
+		game.ReplicatedStorage.AnnouncementEvent:FireServer(text)
+	end)
+end
+coroutine.wrap(PUUZ_fake_script)()
+local function ZNUKV_fake_script() -- UNANCHOR.Script 
+	local script = Instance.new('Script', UNANCHOR)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+	end)
+	
+end
+coroutine.wrap(ZNUKV_fake_script)()
+local function SRFHON_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	if game.Players.LocalPlayer.Name == "HaruoRbx" and "Igor201176" then ---- Change "YourNameHere" to your Roblox Username and "FriendsNameHere" to your friend's username
+		script.Parent.Visible = true
+	else
+		script.Parent.Visible = false
+	end
+end
+coroutine.wrap(SRFHON_fake_script)()
+local function BCQTI_fake_script() -- DAMESSAGE.Script 
+	local script = Instance.new('Script', DAMESSAGE)
+
+	wait(2)
+	game.ReplicatedStorage.AnnouncementEvent.OnServerEvent:Connect(function(player, text)
+		script.Parent.Visible = true
+		script.Parent.Text = text
+		wait(4)
+		script.Parent.Visible = false
+	end)
+end
+coroutine.wrap(BCQTI_fake_script)()
+local function INEVZ_fake_script() -- ScreenGui.Script 
+	local script = Instance.new('Script', ScreenGui)
+
+	script.Parent.AnnouncementEvent.Parent = game.ReplicatedStorage
+end
+coroutine.wrap(INEVZ_fake_script)()
